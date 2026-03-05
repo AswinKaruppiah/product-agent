@@ -29,6 +29,9 @@ llm = ChatOpenAI(
     model="openai/gpt-oss-120b",
     base_url="https://integrate.api.nvidia.com/v1",
     api_key=os.getenv("NVIDIA_API_KEY"),
+    temperature=1,
+    top_p=1,
+    max_completion_tokens=4096,
 )
 
 parser = PydanticOutputParser(pydantic_object=ProductResponse)
