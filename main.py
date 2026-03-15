@@ -1,3 +1,4 @@
+from fastapi import FastAPI
 from dotenv import load_dotenv
 import os
 from pydantic import BaseModel
@@ -7,9 +8,21 @@ from langchain_core.output_parsers import PydanticOutputParser
 from langchain_core.prompts import ChatPromptTemplate
 from langchain_classic.agents import create_tool_calling_agent, AgentExecutor
 from tools import product_data, save_tool
+from fastapi.middleware.cors import CORSMiddleware
+from fastapi.responses import StreamingResponse
+import json
 
 load_dotenv()
 
+app = FastAPI()
+
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["*"],
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
 
 class PriceItem(BaseModel):
     website: str
@@ -24,6 +37,8 @@ class ProductResponse(BaseModel):
     product_list: List[PriceItem]
     low_price_of_all: PriceItem
 
+class ChatRequest(BaseModel):
+    message: str
 
 llm = ChatOpenAI(
     model="openai/gpt-oss-120b",
@@ -32,59 +47,104 @@ llm = ChatOpenAI(
     temperature=1,
     top_p=1,
     max_completion_tokens=4096,
+    streaming=True
 )
 
 parser = PydanticOutputParser(pydantic_object=ProductResponse)
 prompt = ChatPromptTemplate.from_messages(
-    [
-        (
-            "system",
-            """
-You are a price comparison agent.
+[
+(
+"system",
+"""
+You are a STRICT price comparison agent.
 
-MANDATORY TOOL USAGE:
-- You MUST call `search_product` for every query.
-- You MUST NOT answer from memory.
-- You MUST NOT fabricate prices.
+MANDATORY TOOL USAGE
+- You MUST call `search_product`.
+- NEVER answer from memory.
+- NEVER fabricate prices.
 
-Execution Workflow:
-1. Call `search_product` with the user query.
-2. Filter only exact and relevant product matches.
-3. Extract numeric prices (float values only).
-4. Determine the lowest price.
-5. Construct the final structured JSON response.
+QUERY INTERPRETATION
+First determine the PRIMARY PRODUCT CATEGORY from the user query.
 
-Saving Results:
-- After constructing the final structured JSON response, call the tool `save_to_json`.
-- Pass ONLY the final structured JSON object.
-- Do NOT pass raw tool output.
-- Do NOT pass intermediate reasoning.
+Examples:
+- "iqoo" → smartphone
+- "iphone 15" → smartphone
+- "sony headphones" → headphones
+- "samsung tv" → television
 
-Final Output Rules:
-- Return ONLY the final structured JSON object as the final answer.
-- The field `low_price_of_all` MUST exactly match one item inside `product_list`.
+PRODUCT MATCH RULES
 
-If no results are found:
-- Return an empty product_list.
-- Set low_price_of_all to null.
+1. CATEGORY MATCH (VERY IMPORTANT)
+   - Only include products from the same category.
+   - If the query is a smartphone brand or model, include ONLY smartphones.
+
+2. ACCESSORY EXCLUSION
+   ALWAYS exclude accessories such as:
+   - cases
+   - back cover
+   - screen guard
+   - charger
+   - cable
+   - adapter
+   - earphones
+   - tempered glass
+   - battery
+
+3. TITLE VALIDATION
+   The product title MUST:
+   - contain the main query keyword
+   - belong to the same category
+
+4. REJECT PRODUCTS if title contains any of these words:
+   case
+   cover
+   back cover
+   pouch
+   charger
+   cable
+   adapter
+   tempered
+   protector
+   skin
+
+5. MODEL MATCH
+   If the query specifies a model, include ONLY that model.
+
+RESULT COUNT
+- Return at least 10 products if available.
+
+OUTPUT RULES
+- Return ONLY the JSON object.
+- Do not include explanations.
 
 {format_instructions}
-            """,
-        ),
-        ("placeholder", "{chat_history}"),
-        ("human", "{query}"),
-        ("placeholder", "{agent_scratchpad}"),
-    ]
+"""
+),
+("placeholder", "{chat_history}"),
+("human", "{input}"),
+("placeholder", "{agent_scratchpad}"),
+]
 ).partial(format_instructions=parser.get_format_instructions())
 
-tools = [product_data, save_tool]
+tools = [product_data]
 agent = create_tool_calling_agent(llm=llm, prompt=prompt, tools=tools)
 agent_executor = AgentExecutor(agent=agent, tools=tools, verbose=True)
-query = input("What can i help you ? ")
-raw_response = agent_executor.invoke({"query": query})
 
-try:
-    structured_response = parser.parse(raw_response.get("output"))
-    print(structured_response)
-except Exception as e:
-    print("Error parsing response", e, "Raw Response - ", raw_response)
+@app.get("/")
+def home():
+    return {"status": "server running"}
+
+@app.post("/chat")
+async def chat(req: ChatRequest):
+    query = req.message
+
+    raw_response = agent_executor.invoke({"input": query})
+
+    try:
+        structured_response = parser.parse(raw_response.get("output"))
+        return {"response": structured_response}
+    except Exception as e:
+        return {
+            "error": "Error parsing response",
+            "raw_response": raw_response
+        }

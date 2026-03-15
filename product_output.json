@@ -1,77 +1,119 @@
 {
-    "name": "iqoo 15",
+    "name": "iphone",
     "product_list": [
         {
-            "website": "Flipkart",
-            "title": "iQOO 15 5G",
-            "price": 67379,
-            "currency": "₹",
-            "product_link": "https://www.google.co.in/search?ibp=oshop&q=iqoo%2015&prds=catalogid:15866133684888528405,headlineOfferDocid:18426695621951524345,imageDocid:6078290098688112142,rds:PC_13939576505300429185|PROD_PC_13939576505300429185,gpcid:13939576505300429185,pvt:hg&hl=en&gl=in&udm=28"
+            "website": "Apple",
+            "title": "Apple iPhone 17",
+            "price": 82900,
+            "currency": "INR",
+            "product_link": "https://www.google.co.in/search?ibp=oshop&q=iphone&prds=catalogid:16364057793558613265,headlineOfferDocid:3126843107418645052,imageDocid:14901493831486379627,rds:PC_14739022971413544759|PROD_PC_14739022971413544759,gpcid:14739022971413544759,mid:576462866558881327,pvt:hg&hl=en&gl=in&udm=28"
         },
         {
-            "website": "amazon.in",
-            "title": "iQOO 15R Dark Knight Smartphone",
-            "price": 47999,
-            "currency": "₹",
-            "product_link": "https://www.google.co.in/search?ibp=oshop&q=iqoo%2015&prds=catalogid:14200809418311970491,headlineOfferDocid:3429537345200716001,imageDocid:10978963088419765282,pvt:hg&hl=en&gl=in&udm=28"
-        },
-        {
-            "website": "Ubuy",
-            "title": "iQOO 15 Smartphone Snapdragon 8 Elite Gen5 Android 16 6.85\" AMOLED 7000mAh",
-            "price": 121871,
-            "currency": "₹",
-            "product_link": "https://www.google.co.in/search?ibp=oshop&q=iqoo%2015&prds=productid:13987543534497894511,headlineOfferDocid:13987543534497894511,imageDocid:2892559358076585804,pvt:hg&hl=en&gl=in&udm=28"
-        },
-        {
-            "website": "Flipkart",
-            "title": "Iqoo 15 5g (alpha, 512 Gb, 7000 Mah)",
-            "price": 78000,
-            "currency": "₹",
-            "product_link": "https://www.google.co.in/search?ibp=oshop&q=iqoo%2015&prds=productid:2847088269615534114,headlineOfferDocid:2847088269615534114,imageDocid:6078290098688112142,pvt:hg&hl=en&gl=in&udm=28"
-        },
-        {
-            "website": "Bajaj Markets X ONDC",
-            "title": "iQOO 15 (Legend, 12GB RAM, 256GB Storage) | Fastest Snapdragon 8 Elite Gen 5 Processor* | Origin OS 6 - Out of The Box* | Samsung 2K M14 Lead OLED",
-            "price": 88062,
-            "currency": "₹",
-            "product_link": "https://www.google.co.in/search?ibp=oshop&q=iqoo%2015&prds=productid:202187841158926096,headlineOfferDocid:202187841158926096,imageDocid:6911423422567622144,rds:PC_13939576505300429185|PROD_PC_13939576505300429185,pvt:hg&hl=en&gl=in&udm=28"
-        },
-        {
-            "website": "National Mobile",
-            "title": "iQOO 15 (Legend, 12GB RAM, 256GB Storage)",
-            "price": 62999,
-            "currency": "₹",
-            "product_link": "https://www.google.co.in/search?ibp=oshop&q=iqoo%2015&prds=productid:7482080139431232895,headlineOfferDocid:7482080139431232895,imageDocid:14476109884525733854,rds:PC_13939576505300429185|PROD_PC_13939576505300429185,pvt:hg&hl=en&gl=in&udm=28"
-        },
-        {
-            "website": "amazon.in",
-            "title": "iQOO 15R Smartphone",
-            "price": 44999,
-            "currency": "₹",
-            "product_link": "https://www.google.co.in/search?ibp=oshop&q=iqoo%2015&prds=catalogid:7082111815741266986,headlineOfferDocid:16433726892474375563,imageDocid:6283608779165062796,pvt:hg&hl=en&gl=en&udm=28"
+            "website": "Apple",
+            "title": "Apple iPhone 17 Pro Max",
+            "price": 229900,
+            "currency": "INR",
+            "product_link": "https://www.google.co.in/search?ibp=oshop&q=iphone&prds=catalogid:2639986208930420858,headlineOfferDocid:8523056064373138016,imageDocid:14726295512130641189,rds:PC_5141485329231317038|PROD_PC_5141485329231317038,gpcid:5141485329231317038,mid:576462869544971580,pvt:hg&hl=en&gl=in&udm=28"
         },
         {
             "website": "Cashify",
-            "title": "iQOO 15R 5G",
-            "price": 44999,
-            "currency": "₹",
-            "product_link": "https://www.google.co.in/search?ibp=oshop&q=iqoo%2015&prds=productid:7369221350914316498,headlineOfferDocid:7369221350914316498,imageDocid:16371985846591346094,pvt:hg&hl=en&gl=in&udm=28"
+            "title": "Apple iPhone 13",
+            "price": 27299,
+            "currency": "INR",
+            "product_link": "https://www.google.co.in/search?ibp=oshop&q=iphone&prds=productid:368837086364850492,headlineOfferDocid:368837086364850492,imageDocid:16630892617364335510,rds:PC_8971650804785857268|PROD_PC_8971650804785857268,pvt:hg&hl=en&gl=in&udm=28"
         },
         {
-            "website": "Alibaba.com",
-            "title": "Vivo Iqoo 15 - 5g Smartphone With 7000mah Battery & 1tb Storage",
-            "price": 58680.87,
-            "currency": "₹",
-            "product_link": "https://www.google.co.in/search?ibp=oshop&q=iqoo%2015&prds=productid:5700456327767773740,headlineOfferDocid:5700456327767773740,imageDocid:11855822642662258207,rds:PC_13939576505300429185|PROD_PC_13939576505300429185,pvt:hg&hl=en&gl=in&udm=28"
+            "website": "Imagine Apple Premium Reseller",
+            "title": "Apple iPhone 17 Pro",
+            "price": 134900,
+            "currency": "INR",
+            "product_link": "https://www.google.co.in/search?ibp=oshop&q=iphone&prds=catalogid:3958896236447090229,headlineOfferDocid:11001623348999884617,imageDocid:1188264361343931895,rds:PC_9961958114952839788|PROD_PC_9961958114952839788,gpcid:9961958114952839788,pvt:hg&hl=en&gl=in&udm=28"
+        },
+        {
+            "website": "Apple",
+            "title": "Apple iPhone 17e",
+            "price": 64900,
+            "currency": "INR",
+            "product_link": "https://www.google.co.in/search?ibp=oshop&q=iphone&prds=catalogid:1144200983974479000,headlineOfferDocid:2448355820702669822,imageDocid:11025987770823584486,rds:PC_15096775703250617709|PROD_PC_15096775703250617709,gpcid:15096775703250617709,mid:576462883654484663,pvt:hg&hl=en&gl=in&udm=28"
+        },
+        {
+            "website": "Pai International",
+            "title": "Apple iPhone 15",
+            "price": 53399.99,
+            "currency": "INR",
+            "product_link": "https://www.google.co.in/search?ibp=oshop&q=iphone&prds=catalogid:12768653927672354796,headlineOfferDocid:14644354876475188324,imageDocid:12720845884457731527,rds:PC_6601648695432433635|PROD_PC_6601648695432433635,gpcid:6601648695432433635,mid:576462758755759090,pvt:hg&hl=en&gl=in&udm=28"
+        },
+        {
+            "website": "Cashify",
+            "title": "Apple iPhone 14",
+            "price": 31299,
+            "currency": "INR",
+            "product_link": "https://www.google.co.in/search?ibp=oshop&q=iphone&prds=productid:12983809115121540151,headlineOfferDocid:12983809115121540151,imageDocid:3698060054595165752,pvt:hg&hl=en&gl=en&udm=28"
+        },
+        {
+            "website": "Apple",
+            "title": "Apple iPhone 16",
+            "price": 69900,
+            "currency": "INR",
+            "product_link": "https://www.google.co.in/search?ibp=oshop&q=iphone&prds=catalogid:3996416311311992647,headlineOfferDocid:5710833014476380516,imageDocid:9024873705913287738,rds:PC_1465601687215425854|PROD_PC_1465601687215425854,gpcid:1465601687215425854,mid:576460833570787340,pvt:hg&hl=en&gl=in&udm=28"
+        },
+        {
+            "website": "bigbasket.com",
+            "title": "Apple iPhone 16e",
+            "price": 47900,
+            "currency": "INR",
+            "product_link": "https://www.google.co.in/search?ibp=oshop&q=iphone&prds=catalogid:7566334800258145375,headlineOfferDocid:15782146330815055366,imageDocid:18214629247870965004,rds:PC_14126173308846421367|PROD_PC_14126173308846421367,gpcid:14126173308846421367,mid:576462880781495626,pvt:hg&hl=en&gl=in&udm=28"
+        },
+        {
+            "website": "FoneZone.com",
+            "title": "Apple iPhone 12",
+            "price": 19124,
+            "currency": "INR",
+            "product_link": "https://www.google.co.in/search?ibp=oshop&q=iphone&prds=catalogid:16594348237768066036,headlineOfferDocid:682643509674783683,imageDocid:12302911861703114742,rds:PC_435984501635772740|PROD_PC_435984501635772740,gpcid:15365143133040579313,mid:576462900638141113,pvt:hg&hl=en&gl=in&udm=28"
+        },
+        {
+            "website": "Apple",
+            "title": "Apple iPhone 11",
+            "price": 16199,
+            "currency": "INR",
+            "product_link": "https://www.google.co.in/search?ibp=oshop&q=iphone&prds=productid:13337650648278652324,headlineOfferDocid:13337650648278652324,imageDocid:17341062947336764631,rds:PC_8023149794696260886|PROD_PC_8023149794696260886,pvt:hg&hl=en&gl=in&udm=28"
+        },
+        {
+            "website": "Ovantica.com",
+            "title": "Refurbished Apple iPhone 7 - Renewed - Silver - 32GB/2 GB - Fair by Ovantica",
+            "price": 5999,
+            "currency": "INR",
+            "product_link": "https://www.google.co.in/search?ibp=oshop&q=iphone&prds=productid:5414605287968895044,headlineOfferDocid:5414605287968895044,imageDocid:14995033805777842437,pvt:hg&hl=en&gl=en&udm=28"
+        },
+        {
+            "website": "Apple",
+            "title": "Apple iPhone SE 2022 64 GB, (Product) Red",
+            "price": 11900,
+            "currency": "INR",
+            "product_link": "https://www.google.co.in/search?ibp=oshop&q=iphone&prds=productid:8306671431480839618,headlineOfferDocid:8306671431480839618,imageDocid:2684736924930211511,rds:PC_5417142503938740527|PROD_PC_5417142503938740527,pvt:hg&hl=en&gl=in&udm=28"
+        },
+        {
+            "website": "Reliance Digital",
+            "title": "Apple iPhone 14",
+            "price": 13900,
+            "currency": "INR",
+            "product_link": "https://www.google.co.in/search?ibp=oshop&q=iphone&prds=productid:7395759411129999444,headlineOfferDocid:14945004036496041279,imageDocid:7660861446209781058,rds:PC_5417142503938740527|PROD_PC_5417142503938740527,gpcid:6012523164490145719,mid:576462235286383978,pvt:hg&hl=en&gl=in&udm=28"
+        },
+        {
+            "website": "Cashify",
+            "title": "Apple iPhone X",
+            "price": 11999,
+            "currency": "INR",
+            "product_link": "https://www.google.co.in/search?ibp=oshop&q=iphone&prds=productid:17733709971959354175,headlineOfferDocid:17733709971959354175,imageDocid:15719007819242092935,rds:PC_13295346759454735556|PROD_PC_13295346759454735556,pvt:hg&hl=en&gl=in&udm=28"
         }
     ],
     "low_price_of_all": {
-        "website": "amazon.in",
-        "title": "iQOO 15R Smartphone",
-        "price": 44999,
-        "currency": "₹",
-        "product_link": "https://www.google.co.in/search?ibp=oshop&q=iqoo%2015&prds=catalogid:7082111815741266986,headlineOfferDocid:16433726892474375563,imageDocid:6283608779165062796,pvt:hg&hl=en&gl=en&udm=28"
+        "website": "Ovantica.com",
+        "title": "Refurbished Apple iPhone 7 - Renewed - Silver - 32GB/2 GB - Fair by Ovantica",
+        "price": 5999,
+        "currency": "INR",
+        "product_link": "https://www.google.co.in/search?ibp=oshop&q=iphone&prds=productid:5414605287968895044,headlineOfferDocid:5414605287968895044,imageDocid:14995033805777842437,pvt:hg&hl=en&gl=en&udm=28"
     },
-    "date": "2026-03-05",
-    "time": "23:46:37"
+    "date": "2026-03-15",
+    "time": "12:43:40"
 }

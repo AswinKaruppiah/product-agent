@@ -40,7 +40,7 @@ product_data = Tool(
 )
 
 
-def save_to_json(name: str, product_list: list, low_price_of_all: dict):
+def save_to_json(name: str, product_list: list, low_price_of_all: dict=None):
     print("🔥 save_to_json CALLED")
 
     data = {
