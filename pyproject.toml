@@ -3,9 +3,11 @@ name = "backend"
 version = "0.1.0"
 description = "Add your description here"
 readme = "README.md"
-requires-python = ">=3.14"
+requires-python = ">=3.12"
 dependencies = [
     "fastapi>=0.135.1",
+    "langchain>=1.2.15",
+    "langchain-classic>=1.0.3",
     "langchain-community>=0.4.1",
     "langchain-openai>=1.1.10",
     "pydantic>=2.12.5",
